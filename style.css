@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #001f3f, #0f3b82);
+  color: blueviolet;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background: linear-gradient(navy, blue);
+    z-index: 1000;
+     background: linear-gradient(135deg, rgba(2,6,23,0.85), rgba(4,28,50,0.75), rgba(15,59,130,0.7));
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, #1e5eff, #00b4ff) 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links li, a{
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(34, 248, 6);
+    padding: 8px 16px;
+}
+
+#home {
+    padding: 50px;
+    text-align: center;
+
+}
+
+hero {
+    position: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+#About {
+    padding: 50px;
+    text-align: center;
+
+}
+
+#activities {
+    padding: 50px;
+    text-align: center;
+}
+
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+#price {
+    padding: 50px;
+    text-align: center;
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+  }
