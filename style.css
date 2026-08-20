@@ -6,13 +6,13 @@
 }
 
 :root {
-  --primary-color: #1e5eff;
-  --secondary-color: #00b4ff;
+  --primary-blue: #1e5eff;
+  --secondary-blue: #00b4ff;
+  --accent-blue: #0066ff;
   --dark-bg: #020617;
   --gradient-bg: linear-gradient(135deg, #020617, #001f3f, #0f3b82);
   --text-primary: #ffffff;
   --text-secondary: #e0e0e0;
-  --accent-green: #22f806;
 }
 
 html {
@@ -37,7 +37,7 @@ body {
   background: linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(4, 28, 50, 0.85), rgba(15, 59, 130, 0.8));
   backdrop-filter: blur(12px);
   border-bottom: 2px solid;
-  border-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) 1;
+  border-image: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue)) 1;
   padding: 1rem 2rem;
   box-shadow: 0 8px 32px rgba(30, 94, 255, 0.2);
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .logo h1 span {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -67,7 +67,7 @@ body {
 .nav-links li a {
   display: inline-block;
   text-decoration: none;
-  color: var(--accent-green);
+  color: var(--secondary-blue);
   padding: 10px 18px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -82,7 +82,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
   transition: width 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: var(--secondary-color);
+  color: var(--accent-blue);
   transform: translateY(-2px);
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .section h1 span {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -140,9 +140,16 @@ body {
   letter-spacing: 1px;
 }
 
+.section h2 {
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .section h3 {
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--secondary-blue);
   margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -198,7 +205,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(2, 6, 23, 0.6);
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.7), rgba(15, 59, 130, 0.8));
   z-index: 2;
 }
 
@@ -226,15 +233,19 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 4px 20px rgba(30, 94, 255, 0.5);
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-content p {
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--secondary-blue);
   font-weight: 500;
   letter-spacing: 1px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 10px rgba(0, 180, 255, 0.5);
 }
 
 /* ===== BUTTONS ===== */
@@ -242,9 +253,9 @@ body {
   display: inline-block;
   padding: 12px 35px;
   margin-top: 20px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
   color: var(--text-primary);
-  border: none;
+  border: 2px solid var(--secondary-blue);
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
@@ -275,7 +286,8 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(30, 94, 255, 0.6);
+  box-shadow: 0 8px 30px rgba(0, 180, 255, 0.6);
+  border-color: var(--accent-blue);
 }
 
 .btn:active {
@@ -296,46 +308,52 @@ body {
   background: linear-gradient(135deg, rgba(30, 94, 255, 0.08), rgba(0, 180, 255, 0.05));
   border-radius: 10px;
   margin: 20px;
+  border-left: 4px solid var(--primary-blue);
 }
 
 #activities {
   background: linear-gradient(135deg, rgba(0, 180, 255, 0.08), rgba(30, 94, 255, 0.05));
   border-radius: 10px;
   margin: 20px;
+  border-left: 4px solid var(--secondary-blue);
 }
 
 #projects {
-  background: linear-gradient(135deg, rgba(34, 248, 6, 0.05), rgba(0, 180, 255, 0.05));
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(0, 180, 255, 0.05));
   border-radius: 10px;
   margin: 20px;
+  border-left: 4px solid var(--accent-blue);
 }
 
 #price {
   background: linear-gradient(135deg, rgba(30, 94, 255, 0.08), rgba(0, 180, 255, 0.05));
   border-radius: 10px;
   margin: 20px;
+  border-left: 4px solid var(--primary-blue);
 }
 
 #contact {
   background: linear-gradient(135deg, rgba(0, 180, 255, 0.08), rgba(30, 94, 255, 0.05));
   border-radius: 10px;
   margin: 20px;
+  border-left: 4px solid var(--secondary-blue);
 }
 
 /* ===== HR STYLING ===== */
 hr {
   border: none;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), transparent);
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary-blue), var(--secondary-blue), transparent);
   margin: 60px auto;
   max-width: 800px;
+  box-shadow: 0 0 15px rgba(30, 94, 255, 0.4);
 }
 
 /* ===== FOOTER ===== */
 footer {
   background: linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(4, 28, 50, 0.9));
   border-top: 2px solid;
-  border-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) 1;
+  border-image: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue)) 1;
   color: var(--text-secondary);
   padding: 60px 0 20px;
   margin-top: 60px;
@@ -355,7 +373,7 @@ footer {
 }
 
 .footer-col h4 {
-  color: var(--text-primary);
+  color: var(--secondary-blue);
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -379,7 +397,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-blue);
   transform: translateX(5px);
 }
 
