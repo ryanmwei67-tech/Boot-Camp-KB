@@ -1,79 +1,47 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/* Modern, accessible styles for Mwei's Quantum Bootcamp */
+:root{
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --text:#0b2545;
+  --muted:#5b6b7a;
+  --accent:#1e90ff;
+  --accent-2:#0066cc;
+  --radius:10px;
+  --container:1100px;
 }
-
-body {
-  background: linear-gradient(135deg, #020617, #001f3f, #0f3b82);
-  color: blueviolet;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
 }
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    background: linear-gradient(navy, blue);
-    z-index: 1000;
-     background: linear-gradient(135deg, rgba(2,6,23,0.85), rgba(4,28,50,0.75), rgba(15,59,130,0.7));
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid;
-  border-image: linear-gradient(90deg, #1e5eff, #00b4ff) 1;
+.container{max-width:var(--container);margin:0 auto;padding:0 16px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-weight:700;color:var(--text);text-decoration:none;font-size:1.125rem}
+.nav-toggle{display:none;background:none;border:1px solid transparent;padding:8px;border-radius:6px}
+.primary-nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+.primary-nav a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:6px}
+.hero{background:linear-gradient(180deg, #eaf4ff, #f7fbff);padding:64px 0;text-align:center}
+.hero-inner h1{font-size:2rem;margin:0 0 8px}
+.tagline{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;cursor:pointer;border:0}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;border:1px solid rgba(11,37,69,0.08);color:var(--text)}
+.section{padding:48px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(11,37,69,0.06)}
+.site-footer{background:#fff;border-top:1px solid #e6eef8;padding:24px 0;margin-top:36px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.social{list-style:none;display:flex;gap:12px;padding:0;margin:0}
+.contact-form{max-width:520px}
+.contact-form label{display:block;margin:12px 0 6px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #dbe7f6}
+/* Responsive */
+@media (max-width:800px){
+  .primary-nav{display:none}
+  .nav-toggle{display:inline-block}
+  .footer-inner{flex-direction:column;gap:12px}
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-}
-
-.nav-links li, a{
-    display: inline-flex;
-    align-items: center;
-    margin: 0 10px;
-    text-decoration: none;
-    color: rgb(34, 248, 6);
-    padding: 8px 16px;
-}
-
-#home {
-    padding: 50px;
-    text-align: center;
-
-}
-
-hero {
-    position: center;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-}
-
-#About {
-    padding: 50px;
-    text-align: center;
-
-}
-
-#activities {
-    padding: 50px;
-    text-align: center;
-}
-
-#projects {
-    padding: 50px;
-    text-align: center;
-}
-
-#price {
-    padding: 50px;
-    text-align: center;
-}
-
-#contact {
-    padding: 50px;
-    text-align: center;
-  }

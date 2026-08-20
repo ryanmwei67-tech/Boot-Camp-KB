@@ -1,143 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWEI'S Quantum</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mwei's Quantum Bootcamp</title>
+  <meta name="description" content="Robotics & ICT bootcamp offering hands-on courses in robotics, coding, and applied technology for students." />
+  <meta property="og:title" content="Mwei's Quantum Bootcamp" />
+  <meta property="og:description" content="Hands-on robotics, coding, and technology programs for the next generation of innovators." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="logo">
-        <h1>MWEI'S <span>Quantum</span></h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Mwei's Quantum</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#price">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+  </header>
 
-<!-- HOME -->
-<section id="home" class="section">
-    <h1>NEXT GENERATION <span>BOOTCAMP</span></h1>
-    <h3>Powered by KB Seniors</h3>
-    <p>Empowering the Next Generation of Innovators</p>
-</section>
-
-<!-- HERO VIDEO -->
-<section class="hero">
-    <video autoplay muted loop class="bg-video">
-        <source src="video.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
         <h1>Robotics & ICT Bootcamp</h1>
-        <p>Innovation • Creativity • Excellence • Technology</p>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Welcome to our Robotics & ICT Bootcamp! We empower students with hands-on skills in coding, electronics, and innovation.</p>
-    <a href="price/index4.html"><button class="btn">Join Us Now</button></a>
-</section>
-
-<!-- ACTIVITIES -->
-<section id="activities" class="section">
-    <h2>Activities</h2>
-    <p>
-        We offer hands-on robotics workshops, coding sessions, and tech challenges.
-        Students build real-world solutions while learning programming and engineering.
-    </p>
-    <a href="price/index2.html"><button class="btn">Explore Activities</button></a>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>
-        Students work on real-world tech projects including robots, smart systems,
-        and innovative applications that prepare them for the future.
-    </p>
-    <a href="price/index3.html"><button class="btn">View Projects</button></a>
-</section>
-
-<!-- PRICING -->
-<section id="price" class="section">
-    <h2>Pricing</h2>
-    <p>Flexible and affordable packages designed for every learner.</p>
-    <a href="price/index1.html"><button class="btn">View Pricing</button></a>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: ryanmwei67@gmail.com</p>
-    <p>Phone: 0757769044 / 0784306676</p>
-    <p>Location: Kapsabet Boys High School, Kapsabet, Kenya</p>
-    <a href="price/index5.html"><button class="btn">Get in Touch</button></a>
-</section>
-
-<hr>
-
-<section class="section">
-    <h2>Join MWEI'S Quantum Bootcamp Today!</h2>
-    <p>Empower your future with cutting-edge skills in robotics and ICT. Enroll now and be part of the next generation of innovators!</p>
-    <a href="price/index4.html"><button class="btn">Enroll Now</button></a>
-</section>
-
-<hr>
-
-
-
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="row">
-
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#price">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Programs</h4>
-                <ul>
-                    <li>Beginner Coding</li>
-                    <li>Advanced Robotics</li>
-                    <li>Web Development</li>
-                    <li>AI Basics</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Follow Us</h4>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                    <li>TikTok</li>
-                </ul>
-            </div>
-
+        <p class="tagline">Innovation • Creativity • Excellence</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#pricing">Enroll Now</a>
+          <a class="btn ghost" href="#programs">View Programs</a>
         </div>
-        <p class="footer-bottom">© 2026 MWEI'S Quantum Bootcamp | All Rights Reserved</p>
-    </div>
-</footer>
+      </div>
+    </section>
 
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>We deliver hands-on learning in robotics, programming, and applied ICT to prepare students for future careers in technology. Our instructors are experienced mentors who focus on practical projects and teamwork.</p>
+    </section>
+
+    <section id="programs" class="section container">
+      <h2>Programs</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Beginner Coding</h3>
+          <p>Introductory programming with block-based and Python fundamentals.</p>
+        </article>
+        <article class="card">
+          <h3>Advanced Robotics</h3>
+          <p>Robotics design, sensors, and control systems with team projects.</p>
+        </article>
+        <article class="card">
+          <h3>Web & App Development</h3>
+          <p>Build real web and mobile apps with modern tools and deployment.</p>
+        </article>
+        <article class="card">
+          <h3>AI & Data Basics</h3>
+          <p>Explore machine learning fundamentals and practical use-cases.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Student Projects</h2>
+      <p>Students build robots, smart systems, and applications that solve real problems. Projects are showcased at the end of each cohort.</p>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h2>Pricing</h2>
+      <p>Flexible packages designed for beginners to advanced learners. Contact us for group and scholarship rates.</p>
+      <a class="btn primary" href="#contact">Request Pricing</a>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ryanmwei67@gmail.com">ryanmwei67@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254757769044">+254 757 769 044</a></p>
+      <p>Location: Kapsabet Boys High School, Kapsabet, Kenya</p>
+      <form id="contact-form" class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Thank you — we will be in touch!')">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Mwei's Quantum Bootcamp</strong>
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+      <div>
+        <p>Follow us:</p>
+        <ul class="social">
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="client/script.js"></script>
 </body>
 </html>
