@@ -1,3 +1,4 @@
+/* style.css - small fixes and selectors cleanup */
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +18,10 @@ body {
     position: sticky;
     background: linear-gradient(navy, blue);
     z-index: 1000;
-     background: linear-gradient(135deg, rgba(2,6,23,0.85), rgba(4,28,50,0.75), rgba(15,59,130,0.7));
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid;
-  border-image: linear-gradient(90deg, #1e5eff, #00b4ff) 1;
+    background: linear-gradient(135deg, rgba(2,6,23,0.85), rgba(4,28,50,0.75), rgba(15,59,130,0.7));
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #1e5eff, #00b4ff) 1;
 }
 
 .logo {
@@ -30,7 +31,7 @@ body {
     font-size: 24px;
 }
 
-.nav-links li, a{
+.nav-links li a{
     display: inline-flex;
     align-items: center;
     margin: 0 10px;
@@ -42,20 +43,18 @@ body {
 #home {
     padding: 50px;
     text-align: center;
-
 }
 
-hero {
-    position: center;
+.hero {
+    position: relative;
     height: 100vh;
     overflow: hidden;
     text-align: center;
 }
 
-#About {
+#about {
     padding: 50px;
     text-align: center;
-
 }
 
 #activities {
@@ -76,4 +75,4 @@ hero {
 #contact {
     padding: 50px;
     text-align: center;
-  }
+}

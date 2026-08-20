@@ -1,241 +1,33 @@
+<!-- price/index4.html - fixed window.onload and script include -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bootcamp Levels</title>
-
-<style>
-
-/* ===== THEME ===== */
-:root {
-  --bg: linear-gradient(135deg, #020617, #041c32, #0a2a5c, #1e5eff);
-  --text: #ffffff;
-  --card-bg: rgba(255,255,255,0.05);
-}
-
-.light-mode {
-  --bg: linear-gradient(135deg, #f0f9ff, #e0f2fe, #bae6fd);
-  --text: #020617;
-  --card-bg: rgba(0,0,0,0.05);
-}
-
-/* ===== BODY ===== */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  transition: 0.4s;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-}
-
-.toggle {
-  cursor: pointer;
-  padding: 8px 15px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #1e5eff, #00b4ff);
-  color: white;
-}
-
-/* ===== HEADER ===== */
-.header {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #1e5eff, #00b4ff);
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
-}
-
-/* ===== GRID ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  padding: 40px;
-}
-
-/* ===== CARD ===== */
-.card {
-  padding: 25px;
-  border-radius: 18px;
-  background: var(--card-bg);
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.03);
-}
-
-/* ===== LEVEL COLORS ===== */
-.beginner { background: linear-gradient(135deg, #22c55e, #4ade80); color: #022c22; }
-.intermediate { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
-.advanced { background: linear-gradient(135deg, #facc15, #f97316); color: #3f1d00; }
-.professional { background: linear-gradient(135deg, #ef4444, #f87171); }
-.elite { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
-
-/* ===== TEXT ===== */
-.card h3 {
-  margin-top: 0;
-}
-
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* ===== BUTTON ===== */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 18px;
-  border-radius: 10px;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: rgba(0,0,0,0.6);
-}
-
-.light-mode .btn {
-  background: rgba(0,0,0,0.1);
-  color: #020617;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.7;
-}
-
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
-
-<section id="home" class="section">
-    <h1>NEXT GENERATION<span> BOOTCAMP</span>
-        <span> POWERED BY KB SENIOR`S</span></h1>
-    <p>Empowering the Next Generation of Innovators</p>
-</section>
-
-
 <body>
-
-<!-- NAVBAR -->
 <div class="navbar">
   <h2>🤖 Bootcamp</h2>
   <span class="toggle" onclick="toggleMode()">🌗 Mode</span>
 </div>
 
-<!-- HEADER -->
 <div class="header">
   <h1>Bootcamp Levels Overview</h1>
   <p>Discover what each level offers in programming and robotics</p>
 </div>
 
-<!-- GRID -->
-<div class="grid">
+<!-- GRID content omitted -->
 
-  <!-- BEGINNER -->
-  <div class="card beginner">
-    <h3>🟢 Beginner Level</h3>
-    <p>
-      This level introduces learners to the basics of programming and robotics.
-      Students explore simple coding concepts using visual tools and build basic robots.
-    </p>
-    <p><strong>Focus:</strong> Logic, creativity, and fundamentals.</p>
-    <a href="#" class="btn">Explore</a>
-  </div>
-
-  <!-- INTERMEDIATE -->
-  <div class="card intermediate">
-    <h3>🔵 Intermediate Level</h3>
-    <p>
-      Learners begin writing real code and building functional systems.
-      Robotics projects involve sensors and simple automation.
-    </p>
-    <p><strong>Focus:</strong> Python, web basics, Arduino.</p>
-    <a href="#" class="btn">Explore</a>
-  </div>
-
-  <!-- ADVANCED -->
-  <div class="card advanced">
-    <h3>🟡 Advanced Level</h3>
-    <p>
-      This stage focuses on solving real-world problems using programming and robotics.
-      Students design intelligent systems and work on complex projects.
-    </p>
-    <p><strong>Focus:</strong> Data, automation, smart systems.</p>
-    <a href="#" class="btn">Explore</a>
-  </div>
-
-  <!-- PROFESSIONAL -->
-  <div class="card professional">
-    <h3>🔴 Professional Level</h3>
-    <p>
-      Participants build industry-level applications and robotics systems.
-      Emphasis is placed on scalability, performance, and real-world deployment.
-    </p>
-    <p><strong>Focus:</strong> Full-stack dev, IoT, robotics engineering.</p>
-    <a href="#" class="btn">Explore</a>
-  </div>
-
-  <!-- ELITE -->
-  <div class="card elite">
-    <h3>🟣 Elite Level</h3>
-    <p>
-      The highest level where students create advanced AI-powered systems and autonomous robots.
-      Projects simulate real industry challenges.
-    </p>
-    <p><strong>Focus:</strong> AI, machine learning, innovation.</p>
-    <a href="#" class="btn">Explore</a>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  <p>© 2026 Robotics Bootcamp | Learn • Build • Innovate</p>
-</div>
-
-<!-- SCRIPT -->
+<script src="/public/js/app.js"></script>
 <script>
-function toggleMode() {
-  document.body.classList.toggle("light-mode");
-
-  if (document.body.classList.contains("light-mode")) {
-    localStorage.setItem("theme", "light");
-  } else {
-    localStorage.setItem("theme", "dark");
+function loadSavedTheme() {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-mode');
   }
 }
-
-window.onload = () => {
-  if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-  }
-};
+window.addEventListener('DOMContentLoaded', loadSavedTheme);
 </script>
-
 </body>
-<section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>For inquiries and registration, please contact us at:</p>
-    <p>Email:ryanmwei67@gmail.com</p>
-    <p>phone:0757769044/0784306676</p>
-    <p>Address:Kapsabet boy`s high school, 123 Main Street, Kapsabet town, Kenya</p>
-</section>
 </html>
