@@ -97,8 +97,6 @@
 
 <hr>
 
-
-
 <!-- FOOTER -->
 <footer>
     <div class="container">
@@ -140,6 +138,20 @@
         <p class="footer-bottom">© 2026 MWEI'S Quantum Bootcamp | All Rights Reserved</p>
     </div>
 </footer>
+
+<script>
+  document.querySelectorAll('.btn').forEach((button) => {
+    button.addEventListener('click', () => {
+      button.classList.remove('is-flipped');
+      void button.offsetWidth;
+      button.classList.add('is-flipped');
+
+      setTimeout(() => {
+        button.classList.remove('is-flipped');
+      }, 700);
+    });
+  });
+</script>
 
 </body>
 </html>
