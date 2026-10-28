@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MWEI's Quantum favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#0f3b82"/>
+      <stop offset="100%" stop-color="#00b4ff"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e5eff"/>
+      <stop offset="100%" stop-color="#00b4ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#ring)" stroke-width="2"/>
+
+  <circle cx="32" cy="31" r="15" fill="none" stroke="#f8fbff" stroke-width="4"/>
+  <path d="M32 17 L32 25 M32 31 L32 47" stroke="#f8fbff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M45 45 L52 52" stroke="#f8fbff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="31" r="4" fill="#f8fbff"/>
+</svg>
